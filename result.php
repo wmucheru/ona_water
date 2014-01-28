@@ -2,6 +2,7 @@
 //Require the functions file
 require('inc/functions.php');
 
+
 $file = file_get_contents('inc/Water.json', true);
 $json = json_decode($file, true);
 $total = count($json);
