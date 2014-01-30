@@ -1,8 +1,8 @@
 <?php
 require('inc/functions.php');
 
-//$file = file_get_contents('inc/Water.json', true);
-//$json = json_decode($file, true);
+$file = file_get_contents('inc/Water.json', true);
+$json = json_decode($file, true);
 	
 $token = 'c5de7ee89c1925924dbf0cfd0087b9642fb8cd5c';
 $url = "https://formhub.org/api/v1/data/north_ghana/8379";
@@ -18,7 +18,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $output = curl_exec($ch);
 
-$json = json_decode($output, true);
+//$json = json_decode($output, true);
 //var_dump($json);
 
 $total = count($json);
@@ -127,7 +127,7 @@ $com_count = count($communities);
 <div class="cls"></div>
 </div>
 	
-<!--<div id="map"></div>-->
+<div id="map"></div>
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/datatable.js"></script>

@@ -1,9 +1,10 @@
 $(document).ready(function(){
 	$(".dataTables").dataTable({
-		"aaSorting": [[ 1, "desc" ]]
 		"aoColumns": [
+			{ "sType": "string"  },
 		   {  "sType": "numeric"}
-		 ]
+		 ],
+		"aaSorting": [[ 1, "desc" ]]
 	});
 });
 
