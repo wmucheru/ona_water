@@ -2,6 +2,7 @@
 //Require the functions file
 require('inc/functions.php');
 
+echo 'THIS IS THE REPO FILE';
 
 $file = file_get_contents('inc/Water.json', true);
 $json = json_decode($file, true);

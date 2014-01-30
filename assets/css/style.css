@@ -1,0 +1,227 @@
+body{
+	background: #fff;
+	font: 13px Georgia, serif;
+	line-height: 1.5em;
+	margin:0;padding:0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: bold;
+	line-height: 1.2em;
+	margin:.6em 0;
+}
+h1{ font-size: 3em; }
+h2{ font-size: 2.6em }
+h3{ font-size: 1.5em }
+h4{ font-size: 1em }
+
+a{
+	color:green;
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+a img{
+	border:0;
+}
+
+ul{
+	list-style: none;
+}
+input[type=text], input[type=password], textarea{
+	border: 1px solid #afafaf;
+	color: #444;
+	padding: 3px;
+}
+input[type=text]:hover, input[type=password]:hover, textarea:hover{
+	border: 1px solid #1185C7;
+}
+select{
+	border: 1px solid #afafaf;
+	padding: 2px;
+	width: 150px;
+}
+input[type=button], input[type=submit]{
+	background: url(../images/btn_bg.png) repeat-x center center #1185C7;
+	border: 1px solid #AFAFAF;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: .6em 1em;
+}
+.cls{
+	clear: both; 
+}
+.container{
+/*	border: 1px solid pink;*/
+}
+.smallfont{
+	font-size: 12px;
+}
+.redfont{
+	color: #EC1C24;
+}
+.italic{
+	font-style: italic;
+}
+.cyanfont{
+	color: #00FFFF;
+}
+.largefont{
+	font-size: 40px;
+}
+.txcenter{
+	text-align:center!important;
+}
+.cfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#wrapper{
+	border:1px solid #EFEFEF;
+	margin:0 auto;
+	max-width:640px;
+	padding:2em;
+}
+
+ul.waterlist li{
+	border:1px solid #CFCFCF;
+	border-radius:.3em;
+	float:left;
+	margin-bottom:.5em;
+	margin-right:.5em;
+	padding:.7em;
+	min-width:15em;
+	width:30%;
+	transition:background ease-in .2s;
+}
+ul.waterlist li:hover{
+	cursor:pointer;
+}
+ul.waterlist li .dgt{
+	float:right;
+	padding:1em:
+}
+.waterbox{
+	border-top:3px solid green;
+	clear:both;
+	margin-bottom:3em;
+	padding:1em 0;
+	width:100%;
+}
+
+
+/* Table Design */
+.dataTable{
+	border-collapse: collapse;
+	text-align: left;
+}
+.dataTable th{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 8px;
+	color: #039;
+}
+.dataTable td{
+	padding: 8px;
+	color: #669;
+}
+.dataTable .odd{
+	background: #e8edff; 
+}
+
+/* DATATABLES */
+.ui-widget-header{
+	background:#EFEFEF;
+	border-bottom:1px solid #CFCFCF!important;
+	border:0;
+	border-radius:0;
+	height:2em;
+	padding:1em;
+}
+.ui-tabs-nav.ui-widget-header{
+	background:none;
+	border:0;
+}
+.ui-state-default .ui-icon{
+	float:right;
+}
+
+.dataTables_length{
+    width: 40%;
+    float: left;
+    padding-top:.4em;
+}
+
+.dataTables_length select{
+    width: 30%;
+	min-width:4em;
+}
+.dataTables_filter{
+/*	float:right;*/
+	padding-top: 5px;
+	margin-bottom:2em;
+	min-width:30em;
+}
+.dataTables_filter input{
+	min-width:8em;
+	width:25%;
+}
+.dataTables_wrapper table{
+	border-top:2px solid #AFAFAF;
+	border-bottom:1px solid #AFAFAF;
+	clear: both;
+	min-width:30em;
+	margin-bottom:2em;
+	width:70%;
+}
+.dataTables_info{
+	float:left;
+	width:40%;
+}
+.dataTables_paginate{
+/*	float:right;*/
+}
+#DataTables_Table_1_paginate a:hover, #DataTables_Table_0_paginate a:hover{
+	cursor:pointer;
+	text-decoration:underline;
+}
+a#DataTables_Table_1_next, a#DataTables_Table_0_next{
+	margin-left:1em!important;
+}
+
+
+/*******************************
+          Responsive
+*******************************/
+
+@media all and (max-width : 870px) {
+	ul.waterlist li{
+		border:1px solid #CFCFCF;
+		border-radius:.3em;
+		float:left;
+		margin-bottom:.5em;
+		margin-right:.5em;
+		padding:.7em;
+		min-width:15em;
+		width:45%;
+		transition:background ease-in .2s;
+	}
+}
+@media all and (max-width : 600px) {
+	ul.waterlist li{
+		border:1px solid #CFCFCF;
+		border-radius:.3em;
+		float:left;
+		margin-bottom:.5em;
+		margin-right:.5em;
+		padding:.7em;
+		min-width:15em;
+		width:95%;
+		transition:background ease-in .2s;
+	}
+}
