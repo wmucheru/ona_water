@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	$(".dataTables").dataTable({
 		"aaSorting": [[ 1, "desc" ]]
+		"aoColumns": [
+		   {  "sType": "numeric"}
+		 ]
 	});
 });
 

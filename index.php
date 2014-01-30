@@ -113,7 +113,7 @@ $com_count = count($communities);
 					if($name && $broken_points!=0 && $all_points!=0){
 						$percentage = ($broken_points/$all_points)*100;
 						echo '<tr><td>'.$name . '</td>
-						<td>'.number_format($percentage, 1, '.', '').'%</td></tr>';
+						<td>'.number_format($percentage,1,'.','').'</td></tr>';
 					}
 					//var_dump($name);
 				}
